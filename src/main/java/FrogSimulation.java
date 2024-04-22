@@ -18,15 +18,13 @@ public class FrogSimulation
 		int distance = 0;
 		int hops = 0;
 		while (hops<maxHops){
-			distance = distance +hopDistance();
+			distance = distance + hopDistance();
 			hops++;
 			if(distance<0)
 				return false;
-			else if (distance >=goalsDistance)
+			else if (distance >=goalDistance)
 				return true;
 		}return false;
-	}
-
 	}
 	
 	public double runSimulations(int num)
